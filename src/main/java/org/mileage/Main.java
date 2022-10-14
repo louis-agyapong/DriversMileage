@@ -23,6 +23,7 @@ public class Main {
     // Get drivers total trips
     System.out.print("Enter your total number of trips ");
     trips = input.nextInt();
+
     for (int count = 1; count <= trips; count++) {
       // Get miles driven
       System.out.printf("Enter miles driven for trip %d ", count);
@@ -30,13 +31,15 @@ public class Main {
       // Get total miles
       totalMiles += miles;
       // Get gallons of fuel used
-      System.out.print("Enter gallons of fuel used ");
+      System.out.printf("Enter gallons of fuel used for trip %d ", count);
       gallons = input.nextInt();
       // Get total gallons
       totalGallons += gallons;
-      System.out.println(totalGallons +  totalMiles);
-      System.out.println(count);
+      System.out.println(count + "\t\t\t\t" + totalMiles + "\t\t\t\t");
+
     }
+    System.out.println("Trip \t\t\t\tMiles Driven \t\t\t\tGallons of Fuel Used");
+    System.out.print("_____________________________________________________");
 
   }
 }
